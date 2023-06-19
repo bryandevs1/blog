@@ -8,10 +8,10 @@ export default function Home({ posts }) {
       <FeaturedPosts />
       <div className="grid grid-cols-1 lg:grid-cols-12 gap-12">
         <div className="mt-20 -mb-5 lg:col-span-8 col-span-1">
-      <h2 className="headline headline-2 section-title">
-        <span className="span">Editor's Choice</span>
-      </h2>
-      <p className="section-text">Don't miss the latest trends</p>
+          <h2 className="headline headline-2 section-title">
+            <span className="span">Editor&apos;s Choice</span>
+          </h2>
+          <p className="section-text">Don&apos;t miss the latest trends</p>
           {posts.map((post, index) => (
             <PostCard key={index} post={post.node} />
           ))}
@@ -26,6 +26,7 @@ export default function Home({ posts }) {
     </div>
   );
 }
+
 // Fetch data at build time
 export async function getStaticProps() {
   const posts = (await getPosts()) || [];
