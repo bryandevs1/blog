@@ -1,3 +1,5 @@
+/* eslint-disable no-use-before-define */
+
 import { FeaturedPosts } from '../sections/index';
 import { PostCard, Categories, PostWidget } from '../components';
 import { getPosts } from '../services';

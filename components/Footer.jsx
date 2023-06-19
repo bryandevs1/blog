@@ -1,3 +1,5 @@
+/* eslint-disable no-use-before-define */
+
 import React from 'react';
 import { SocialIcon } from 'react-social-icons';
 import { useState, useEffect } from 'react';
